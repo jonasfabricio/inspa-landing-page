@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspa</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Este link está buscando dados de uma api do google que nos permite usar icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div id="background">
+        <div id="container">
+            <header>
+                <nav>
+                    <h1>INSPA<span>Academy</span></h1>
+                    <ul class="navDesktop">
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Instrutores</a></li>
+                        <li><a href="#">Parceiros</a></li>
+                    </ul>
+                    <button id="languageButton">
+                        <span class="material-icons" id="languageButtonIcon">language</span>⬇
+                    </button>
+                    <div class="navMobile" onclick="menu()">
+                        <button>
+                            <span class="material-icons" id="navMobileButtonIcon">menu</span>
+                        </button>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <div id="content-container">
+                    <div id="content">
+                        <p id="introduction">Instituto de programação que revolucionará sua vida! Aprenda, codifique e trilhe uma brilhante carreira, com uma imensidão de conteúdos e oportunidades para você.</p>
+                            <div id="flex">
+                                <div id="img-container">
+                                    <div id="lely"><img src="imagens/wesley.jpg"></div>
+                                    <div id="deyvid"><img src="imagens/deyvid.jpg"></div>
+                                    <div id="henrique"><img src="imagens/henrique.jpg"></div>
+                                </div>
+                                <p id="Participants">+30<br>participantes</p>
+                            </div>
+                    </div>
+                    <h1>Aprenda programação e inicie sua brilhante carreira como <span>Dev.</span></h1>
+                    <div id="logo-inspa"><img src="imagens/logo1.png" alt="LOGO-INSPA"></div>
+                </div>
+                <div id="imgs">
+                    <div class="flex">
+                        <div style="background-image: url(imagens/foto2.jpg);"></div>
+                        <div style="background-image: url(imagens/foto3.jpg);"></div>
+                        <div style="background-image: url(imagens/foto10.jpg);"></div>
+                    </div>
+                    <div class="flex">
+                        <div style="background-image: url(imagens/foto7.png);"></div>
+                        <div style="background-image: url(imagens/foto9.jpg);"></div>
+                        <div style="background-image: url(imagens/foto8.png);"></div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
