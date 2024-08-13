@@ -1,9 +1,7 @@
-body, html {
+body {
     margin: 0px;
     padding: 0px;
-    background-color: #212121;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: rgb(32, 32, 32);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -25,76 +23,81 @@ body, html {
     background-color: rgb(121, 34, 0);
 }
 
-#background {
-    margin: auto;
-    width: 99.1vw;
-    height: 1000px;
-    background-size: cover;
-    background-attachment: fixed;
-    background-image: url(imagens/home-pc.png);
-}
 
-#container {
+.mobile-content {
+    width: 90vw;
     margin: auto;
 }
 
-header > nav > h1 > span {
-    color: rgb(179, 51, 0);
+header {
+    padding: 20px;
+    /* position: sticky;
+    top: 0;
+    background-color: #1d1d1d; */
 }
 
 header > nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
 }
 
-header > nav > ul {
-    margin: auto;
-    list-style: none;
-    padding: 0px;
-    padding-right: 100px;
+header > nav > h1 {
+    margin: 0px;
 }
 
-header > nav > ul > li {
-    float: left;
-    padding: 10px 20px;
+#title {
+    font-size: 20pt;
+    margin: 60px 0px;
 }
 
-header > nav > ul > li > a {
-    text-decoration: none;
-    color: white;
-    font-size: 10.5pt;
+span {
+    color: rgb(179, 51, 0);
 }
-
-.navMobile {
-    display: none;
-    color: white;
-    background-color: black;
-}
-
 
 button, #navMobileButtonIcon {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     color: white;
     padding: 0px;
     margin: 0px;
     border: none;
+    width: 25px;
 }
 
 button:hover {
     cursor: pointer;
 }
 
-main #content-container {
-    display: flex;
-    justify-content: space-between;
+header > nav > ul {
+    margin: auto;
+    list-style: none;
+    padding: 0px;
 }
 
-main #content-container #content {
-    font-size: 15pt;
-    width: 25%;
-    position: relative;
+header > nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+header > nav > .navDesktop {
+    display: flex;
+}
+
+header > nav > .navDesktop > li > a{
+    margin: 0px 40px 0px 0px;
+}
+
+#languageButton {
+    display: flex;
+    margin-left: 60px;
+}
+
+#languageButtonIcon {
+    color: white;
+}
+
+#introduction {
+    font-size: 14pt;
+    margin-bottom: 29px;
 }
 
 main #content-container #img-container {
@@ -108,61 +111,148 @@ main #content-container #img-container img {
 }
 main #content-container #content #lely {
     position: absolute;
-    left: 0px;
+    left: 25px;
     object-fit: cover;
     z-index: 3;
 }
 
 main #content-container #content #deyvid {
     position: absolute;
-    left: 40px;
+    left: 65px;
     z-index: 2;
 }
 
 main #content-container #content #henrique {
     position: absolute;
-    left: 80px;
+    left: 100px;
     z-index: 1;
 }
 
-
-#flex {
-    margin: 40px 0px;
-    font-size: 12pt;
-    position: relative;
-    display: flex;
+main #content-container #content #participants {
+    position: absolute;
+    left: 165px;
+    z-index: 1;
 }
 
-main #content-container h1 {
-    width: 45%;
-    font-size: 28pt;
+#about, #mission, #value {
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 5px;
 }
 
-main #content-container h1 span {
-    color: rgb(179, 51, 0);
+#about p, #mission p, #value p {
+    font-size: 13pt;
 }
 
-main #content-container #logo-inspa {
-    width: 18%;
+#mission {
+    background-color: rgba(53, 53, 53, 0.253);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.205);
 }
 
-main #content-container #logo-inspa img {
+#value {
+    background-color: rgb(199, 63, 0);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.205);
+}
+
+#logo-dois {
+    display: block;
+    width: 254px;
     margin: auto;
 }
 
-main #imgs .flex{
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
+@media (max-width: 1000px){
+    #background {
+        background-image: url(imagens/home.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 1143px;
+        width: 99vw;
+        margin: auto;
+    }
+
+    .desktop {
+        display: none !important;
+    } 
+
+    .imgs-container {
+        margin: 120px auto 0px auto ;
+        position: relative;
+        width: 80vw;
+        height: 512px;
+    }
+    
+    .imgs-container .flex {
+        display: flex;
+    }
+    
+    .foto {
+        border-radius: 5px;
+        background-size: cover;
+        margin: 5px 5px 5px 5px;
+        width: 49%;
+        height: 160px;
+        margin: auto;
+    }
+
+    #logo-inspa {
+        max-width: 180px;
+        margin: auto;
+    }
+    
+    #logo-inspa img {
+        margin: auto;
+        width: 70%;
+        display: block;
+    }
 }
 
-main #imgs .flex div {
-    margin: 0px 4px 0px 0px;
-    border-radius: 5px;
-    width: 416px;
-    background-size: cover;
-    height: 288px;
+@media (min-width: 1000px){
+    .mobile {
+        display: none !important;
+    }
+
+    .desktop {
+        display: block;
+    }
+    
+    #background {
+        background-image: url(imagens/home-pc.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 1143px;
+        width: 99.1vw;
+        margin: auto;
+    }
+    
+    
 }
+
+
+
+
+
+
+
+/*body, html {
+    margin: 0px;
+    padding: 0px;
+    background-color: #212121;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#background {
+    margin: auto;
+    width: 99.1vw;
+    height: 1000px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(imagens/home-pc.png);
+}
+
 
 @media (min-width: 1331px){
     #container {
@@ -172,6 +262,118 @@ main #imgs .flex div {
     #background {
         height: 1010px;
         background-size: cover;
+    }
+
+    #background {
+        margin: auto;
+        width: 99.1vw;
+        height: 1000px;
+        background-size: cover;
+        background-attachment: fixed;
+        background-image: url(imagens/home-pc.png);
+    }
+    
+    #container {
+        margin: auto;
+    }
+    
+    header > nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    
+    .navMobile {
+        display: none;
+        color: white;
+        background-color: black;
+    }
+    
+    
+    button, #navMobileButtonIcon {
+        background-color: black;
+        color: white;
+        padding: 0px;
+        margin: 0px;
+        border: none;
+    }
+    
+    button:hover {
+        cursor: pointer;
+    }
+    
+    main #content-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    main #content-container #img-container {
+        width: 150px;
+    }
+    
+    main #content-container #img-container img {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+    }
+    main #content-container #content #lely {
+        position: absolute;
+        left: 0px;
+        object-fit: cover;
+        z-index: 3;
+    }
+    
+    main #content-container #content #deyvid {
+        position: absolute;
+        left: 40px;
+        z-index: 2;
+    }
+    
+    main #content-container #content #henrique {
+        position: absolute;
+        left: 80px;
+        z-index: 1;
+    }
+    
+    
+    #flex {
+        margin: 40px 0px;
+        font-size: 12pt;
+        position: relative;
+        display: flex;
+    }
+    
+    main #content-container h1 {
+        width: 45%;
+        font-size: 28pt;
+    }
+    
+    main #content-container h1 span {
+        color: rgb(179, 51, 0);
+    }
+    
+    main #content-container #logo-inspa {
+        width: 18%;
+    }
+    
+    main #content-container #logo-inspa img {
+        margin: auto;
+    }
+    
+    main #imgs .flex{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+    
+    main #imgs .flex div {
+        margin: 0px 4px 0px 0px;
+        border-radius: 5px;
+        width: 416px;
+        background-size: cover;
+        height: 288px;
     }
 }
 
@@ -200,4 +402,4 @@ main #imgs .flex div {
     header #languageButton {
         display: none;
     }
-}
+} */

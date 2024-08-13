@@ -14,38 +14,92 @@
             <header>
                 <nav>
                     <h1>INSPA<span>Academy</span></h1>
-                    <ul class="navDesktop">
+                    <ul class="navDesktop desktop">
                         <li><a href="#">Sobre</a></li>
                         <li><a href="#">Instrutores</a></li>
                         <li><a href="#">Parceiros</a></li>
                     </ul>
-                    <button id="languageButton">
-                        <span class="material-icons" id="languageButtonIcon">language</span>⬇
+                    <button class="desktop" id="languageButton">
+                        <span class="material-icons desktop" id="languageButtonIcon">language</span>⬇
                     </button>
-                    <div class="navMobile" onclick="menu()">
+                    <div class="navMobile mobile" onclick="menu()">
                         <button>
-                            <span class="material-icons" id="navMobileButtonIcon">menu</span>
+                            <span class="material-icons mobile" id="navMobileButtonIcon">menu</span>
                         </button>
                     </div>
                 </nav>
             </header>
             <main>
-                <div id="content-container">
-                    <div id="content">
+                
+                <!-- Mobile -->
+                
+                <div class="mobile-content mobile">
+                    <div id="logo-inspa"><img src="imagens/logo1.png" alt="LOGO-INSPA"></div>
+                    <h1 id="title">Aprenda programação e inicie sua brilhante carreira como <span>Dev.</span></h1>
+                    
+                    <div id="content-container">
                         <p id="introduction">Instituto de programação que revolucionará sua vida! Aprenda, codifique e trilhe uma brilhante carreira, com uma imensidão de conteúdos e oportunidades para você.</p>
-                            <div id="flex">
-                                <div id="img-container">
-                                    <div id="lely"><img src="imagens/wesley.jpg"></div>
-                                    <div id="deyvid"><img src="imagens/deyvid.jpg"></div>
-                                    <div id="henrique"><img src="imagens/henrique.jpg"></div>
+                        <div id="content">
+                                <div id="flex">
+                                    <div id="img-container">
+                                        <div id="lely"><img src="imagens/wesley.jpg"></div>
+                                        <div id="deyvid"><img src="imagens/deyvid.jpg"></div>
+                                        <div id="henrique"><img src="imagens/henrique.jpg"></div>
+                                    </div>
+                                    <p id="participants">+10<br>participantes</p>
                                 </div>
-                                <p id="Participants">+30<br>participantes</p>
                             </div>
                     </div>
-                    <h1>Aprenda programação e inicie sua brilhante carreira como <span>Dev.</span></h1>
-                    <div id="logo-inspa"><img src="imagens/logo1.png" alt="LOGO-INSPA"></div>
+                    <div class="imgs-container">
+                        <div class="flex">
+                            <div class="foto" style="background-image: url(imagens/foto2.jpg);"></div>
+                            <div class="foto" style="background-image: url(imagens/foto3.jpg);"></div>
+                        </div>
+                        <div class="flex">
+                            <div class="foto" style="background-image: url(imagens/foto10.jpg);"></div>
+                            <div class="foto" style="background-image: url(imagens/foto7.png);"></div>
+                        </div>
+                        <div class="flex">
+                            <div class="foto" style="background-image: url(imagens/foto9.jpg);"></div>
+                            <div class="foto" style="background-image: url(imagens/foto8.png);"></div>
+                        </div>
+                    </div>
+                    <section>
+                        <div id="about">
+                            <h2>Sobre</h2>
+                            <p>O INSPA, sigla para Instituto de Programação Aplicada, é uma instituição com um objetivo inteiramente social. Tem como função ensinar programação a jovens que não se adaptaram ao sistema tradicional de ensino, mas que são apaixonados por tecnologia e veem nela uma oportunidade de transformar suas vidas. Além disso, nós buscamos fomentar o empreendedorismo voltado para tecnologia e inovação, além de estimular a competitividade das empresas de tecnologia já estabelecidas na cidade de Limoeiro, tornando-as mais competitivas a nível nacional. O instituto oferece todos os seus serviços gratuitamente, tanto para as empresas quanto para os alunos, o INSPA é completamente filantrópico e sempre será.</p>
+                        </div>
+                        <div id="logo-dois"><img src="imagens/logo2.png"></div>
+                        <div id="mission">
+                            <h2>Nossa missão</h2>
+                            <p>Nossa missão no INSPA é transformar a realidade econômica das cidades do interior, começando por Limoeiro, por meio da educação. Muitos jovens do interior se veem obrigados a se mudar para a capital em busca de oportunidades de emprego, devido à escassez de opções em suas cidades natais. Acreditamos que o ensino de programação pode reverter essa situação, trazendo oportunidades de todas as partes do mundo para o interior. O aumento do trabalho remoto é justamente o que as cidades do interior precisam para melhorar sua situação econômica e oferecer chances para aqueles que mais necessitam. Quanto mais programadores formarmos no INSPA, mais oportunidades poderemos atrair de fora, mudando a realidade econômica da região.</p>
+                        </div>
+                        <div id="value">
+                            <h2>Nossos valores</h2>
+                            <p>No INSPA, acreditamos que para transformar a sociedade é necessário integrar educação e economia. Preparar jovens para o mercado de trabalho é essencial, assim como garantir que haja profissionais qualificados para preencher as vagas disponíveis. Nosso foco é formar jovens na área de programação de maneira rápida e prática, ensinando apenas o conteúdo que será realmente utilizado no mercado. A educação gratuita que oferecemos garante acesso igualitário para todos, independentemente da situação financeira. Além de formar, nos preocupamos com a empregabilidade dos jovens, conectando-os a empresas parceiras ou incentivando o empreendedorismo. O INSPA é mais do que uma simples escola; é uma comunidade dedicada à formação e à empregabilidade dos jovens. Valorizamos a colaboração e o apoio mútuo entre alunos, professores e parceiros, criando um ambiente onde todos podem crescer juntos. Temos um compromisso com a responsabilidade social, trabalhando para reduzir a desigualdade e aumentar as oportunidades para os jovens do interior, contribuindo para o desenvolvimento econômico das regiões onde atuamos.
+                            </p>
+                        </div>
+                    </section>    
                 </div>
-                <div id="imgs">
+
+                <!-- Desktop -->
+                
+                <div class="desktop" id="content-container">
+                    <div id="content">
+                        <p id="introductionDesktop">Instituto de programação que revolucionará sua vida! Aprenda, codifique e trilhe uma brilhante carreira, com uma imensidão de conteúdos e oportunidades para você.</p>
+                        <div id="flex">
+                            <div id="img-container">
+                                <div id="lely"><img src="imagens/wesley.jpg"></div>
+                                <div id="deyvid"><img src="imagens/deyvid.jpg"></div>
+                                <div id="henrique"><img src="imagens/henrique.jpg"></div>
+                            </div>
+                            <p id="Participants">+10<br>participantes</p>
+                        </div>
+                    </div>
+                        <h1>Aprenda programação e inicie sua brilhante carreira como <span>Dev.</span></h1>
+                        <div id="logo-inspa"><img src="imagens/logo1.png" alt="LOGO-INSPA"></div>
+                </div>
+                <div class="desktop" id="imgs">
                     <div class="flex">
                         <div style="background-image: url(imagens/foto2.jpg);"></div>
                         <div style="background-image: url(imagens/foto3.jpg);"></div>
@@ -58,6 +112,7 @@
                     </div>
                 </div>
             </main>
+            
         </div>
     </div>
 
